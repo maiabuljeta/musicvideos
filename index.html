@@ -55,25 +55,26 @@
     <div class="gallery-container">
         <!-- Video 1 -->
         <div class="gallery-item">
-            <a href="https://www.youtube.com/watch?v=iBjjDXmMR8s" target="_blank">
-                <img src="thumbnail1.jpg" alt="AI Video 1">
-            </a>
+            <img src="thumbnail1.jpg" alt="AI Video 1" onclick="openVideoModal('VIDEO_ID_1')">
         </div>
         <!-- Video 2 -->
         <div class="gallery-item">
-            <a href="https://www.youtube.com/watch?v=7NrAg8q7nY8" target="_blank">
-                <img src="thumbnail2.jpg" alt="AI Video 2">
-            </a>
+            <img src="thumbnail2.jpg" alt="AI Video 2" onclick="openVideoModal('VIDEO_ID_2')">
         </div>
         <!-- Video 3 -->
         <div class="gallery-item">
-            <a href="https://www.youtube.com/watch?v=OCrgYA3D2Ps" target="_blank">
-                <img src="thumbnail3.jpg" alt="AI Video 3">
-            </a>
+            <img src="thumbnail3.jpg" alt="AI Video 3" onclick="openVideoModal('VIDEO_ID_3')">
         </div>
     </div>
 </section>
 
+    <!-- Modal Structure -->
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="videoContainer"></div> <!-- Where the video will be embedded -->
+    </div>
+</div>
 
     <!-- Contact Section -->
     <section id="contact">
